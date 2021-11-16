@@ -1,0 +1,149 @@
+# Datatypes -
+"" '' - String
+1231 -1232 0 - Integers
+1.2332 -1213.223 - float
+index, 0 zero 
+ 0       1      2
+["bob", "jill", "jack"] - Array
+{first_name: "bob", age: 32, is_friend: true} - hash
+(Errors)
+undefined 
+nil 
+NAN 
+
+# Conditional - based off of a condition then run logic
+if else elsif 
+switch
+ternary 
+unless
+
+# loops - continue to run logic until a condition is met
+while 
+for 
+each 
+
+# iterators - go through a given set , preform logic on each value
+for each do 
+each with index
+.map
+
+# methods - return value of some logic, organize
+def print_hello
+
+end
+
+def print_planet(p1, p2)
+
+end
+
+print_planet('mars', 'venus')
+
+Objects - Noun, person, place, or thing, data, 
+- Hashes 
+  { first_name: "luke" , age: 4 }
+- class 
+
+Var
+scope - access to use the var
+foo 
+Foo
+@foo 
+@@class
+
+
+
+
+counter ex
+
+@expenses = [
+  { title: "Buy Clothes", category: "Shopping", amt: 40.00 }, 
+  { title: "Tacos", category: "Food", amt: 20.00 }, 
+  { title: "Movies", category: "Fun", amt: 18.32 }
+]
+
+# puts 40.00 + 20.00 + 18.32 
+# puts 40.00 + 20 + 18.32
+# each index, only grab the amt
+
+def calc_total
+  # store the running total, start off at 0
+  total = 0
+  # loop throught the arr
+  @expenses.each do |expense|
+    # grab the amount from each value
+    # add into the running total of each amount
+    total += expense[:amt].to_f
+    # total = total + expense[:amt]
+  end
+  # return or display the running total
+  puts total
+end
+calc_total
+
+
+
+
+# Classes - coding blueprint of objects 
+class Person
+
+
+end
+  - usually in their own file 
+
+# Modules - grouping together code that we are using over and over again 
+
+module Math 
+
+end
+
+# Ruby Gems - coding libraries that someone created for tools for us to use
+inside your project folder - run a bundle init 
+this will create ruby gem file for you 
+after look for gems and add the gems you want into the gem file , versions 
+bundle or bundle install,- install the tool for your project to use
+read doc of the ruby gem at ruby gems.org to find out how to use tool.
+
+# C.R.U.D
+  - action that we are able to do in app, base 
+  Create 
+  Read 
+  update 
+  Destroy
+
+#   D.R.Y 
+  # Don't Repeat Yourself
+
+#   W.E.T
+  # Written every time 
+
+#   convention - Best practices
+
+# OOP
+#   object oriented programing
+#     - treat everything as an object
+#     - dealing with object 
+
+# BOP
+#   Behavior oriented programing
+
+# inheritance 
+#   Classes 
+#   relationship between objects 
+#   parent to child 
+#     one direction 
+#     everything the parent has the child has access to 
+
+# Encapsulation 
+#   bundling all related data in a single place. 
+
+# Polymorphism 
+#   objects can take many forms 
+#   classes 
+
+# Testing - 
+#   code works like its suppose to 
+
+#   TDD
+#     Test driven Development
+#       write test first and then write code to make your code 
+#       pass the test.
